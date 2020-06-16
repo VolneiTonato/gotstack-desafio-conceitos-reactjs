@@ -8,17 +8,27 @@ body {
   font-size: 14px;
 }
 
-div {
-  width: 100%;
-  margin: 20px;
+div.items {
+  
+  margin-top: 20px;
+  
+  
 }
 
-div li {
+
+div.items ul li {
+  padding: 5px;
+  border: 1px solid #7159c1;
+  border-radius: 10px;
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 3em;
 }
 
-div li + li {
+
+
+div.items li + li {
   margin-top: 15px;
 }
 
@@ -33,7 +43,58 @@ button {
   font-size: 14px;
 }
 
-div li button {
+div.items li button {
   margin: 0 15px;
   background: #ca4949;
+  
 }
+
+
+
+.container{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flex{
+  display: flex;
+  flex-direction: column; 
+}
+
+h1{
+  color: #7159c1;
+  margin: 10px 0;
+  text-align: center;
+}
+
+form button{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+legend{
+  font-size: large;
+}
+
+
+fieldset{
+  
+  padding: 10px;
+}
+
+
+.row{
+    display: flex;
+    flex-direction: column;
+}
+
+.row label{
+  margin-top: 10px;
+}
+
+.row input{
+  padding: 10px;
+}
+
+
