@@ -1,30 +1,24 @@
-import React from "react";
+import React, { Fragment } from "react";
+import RepositoryPage from './pages/repository'
+
 
 import "./styles.css";
 
 function App() {
-  async function handleAddRepository() {
-    // TODO
-  }
 
-  async function handleRemoveRepository(id) {
-    // TODO
-  }
+
 
   return (
-    <div>
-      <ul data-testid="repository-list">
-        <li>
-          Repositório 1
+    <Fragment>
+      <div className="container flex">
 
-          <button onClick={() => handleRemoveRepository(1)}>
-            Remover
-          </button>
-        </li>
-      </ul>
+        <h1>Desafio - GoStack Conceitos Reactjs</h1>
+        
+        <RepositoryPage />
 
-      <button onClick={handleAddRepository}>Adicionar</button>
-    </div>
+        
+      </div>
+    </Fragment>
   );
 }
 
